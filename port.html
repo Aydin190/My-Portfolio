@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website- Aydin</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    
+<!-- We are going to create a nav bar (navigation bar) without using the unordered list (ul) and list items (li) 
+ We are going to make it using the header tag, the nav tag and the anchor tags.
+-->
+
+<header class="header">
+    <!-- We are making the logo of the portfolio, using the anchor tags -->
+     <a class="logo" href="#">Portfolio</a>
+     <!-- Now we are going to make the nav items on the navigation bar using the anchor and nav tags only. -->
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects
+        <a href="#contact">Contact</a>
+        </a>
+      </nav>
+</header>
+
+
+
+<!-- Home Section. We use section tags to differenciate different parts of a website -->
+ <section class="home" id="home">
+    <!-- The left side of the home section will have the home content -->
+     <div class="home-content">
+        <h3>Hello, it's me</h3>
+        <h1>Aydin</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>Welcome to my portfolio, I hope you will definitely enjoy it.</p>
+        <!-- Now we will use our social media icons -->
+         
+       <div class="social-media">
+       <a href="https://www.youtube.com"><i class='bx bxl-youtube'></i></a>
+       <a href="https://github.com"><i class='bx bxl-github' ></i></a>
+       <a href="https://www.whatsapp.com"><i class='bx bxl-whatsapp' ></i></a>
+       <a href="https://www.google.com/?client=safari&channel=iphone_bm"><i class='bx bxl-google' ></i></a>
+       </div>
+       <a class="btn" href="#">Download CV</a>
+     </div>
+     <!-- The right side of the home section will obtain an image -->
+      <div class="home-image">
+        <img src="dp.JPG" alt="">
+      </div>
+ </section>
+
+
+<!-- We are making the about section now -->
+ <section class="about" id="about">
+  <!-- The left side of the about section is containing my image -->
+  <div class="about-image">
+    <img src="DSC05386.JPG" alt="">
+  </div>
+  <!-- The right side of the about section is containing the content of the about section -->
+
+   <div class="about-content">
+    <h2 class="heading">About <span>Me</span></h2>
+    <h3>Frontend Developer</h3>
+    <!-- <p class="about-text"></p> -->
+     <!-- <span class="about-text"></span> -->
+      <p><span class="about-text"></span></p>
+      <!-- Whenever we are using only paragraph tags, we can't properly see the typed effect as paragraph is a blocking tag that means it will take the space even if it doesn't require.
+       As a paragraph takes the whole line and over here as the paragraph start from right side, to maintain his dominance, he will take two half blocks, which makes a whole block. 
+       That's the reason why we can't use paragraph tags.
+       We can't use the span tags also because it is a non blocking tag and it is putting the button on the same line that of the typed feature which we obviously don't want.
+       So what do we have to do?
+       Answer: We have to use paragraphs for its blocking nature such that the button is not showing up on the same line. Also we need the span tag for its nature to finish in the same lineand that particular bar is not showing up before the button. That's why we use the combination of both p and span tags.
+       -->
+    <a class="btn about-btn" href="#">Read More...</a>
+   </div>
+
+
+ </section>
+
+
+ <section class="services" id="services">
+  <h2 class="heading">My <span>Services</span></h2>
+    <div class="services-container">
+      <div class="services-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Web Development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a class="btn" href="#">Read More...</a>
+      </div>
+      
+      <div class="services-box">
+        <i class='bx bx-paint-roll' ></i>
+        <h3>Graphic Designer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a class="btn" href="#">Read More...</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bx-line-chart'></i>
+        <h3>Digital Marketing</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a class="btn" href="#">Read More...</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxl-github'></i>
+        <h3>Search about me on GitHub</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a class="btn" href="#">Read More...</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxl-html5'></i>
+        <h3>Coding on EHOBBY Classes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a class="btn" href="#">Read More...</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxl-gmail'></i>
+        <h3>Text Me</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a class="btn" href="#">Read More...</a>
+      </div>
+
+
+    </div>
+    
+ </section>
+
+
+ <section class="project" id="projects">
+  <h2 class="heading">Latest <span>Projects</span></h2>
+  <!-- The project container is just like a big box which will contain all the projects like a bag having all of them. -->
+  <div class="project-container">
+    <!-- Project box is one of the projects inside the container. -->
+    <div class="project-box">
+      <!-- We have a picture  -->
+      <img src="portfolio1.jpg" alt="picture of projects">
+      <!-- We will add details of the project inside the div and we are going to name it portfolio layer -->
+      <div class="portfolio-layer">
+        <h4>Web Design</h4>
+        <p>Web Design is something to learn with EHOBBY classes.</p>
+        <a href="https://ehobby.in"> <i class='bx bx-link-external'> </i></a>
+      </div>
+
+    </div>
+
+    <div class="project-box">
+      <img src="portfolio2.jpg" alt="picture of projects">
+      <div class="portfolio-layer">
+        <h4>Software Engineering</h4>
+        <p>Learn More about Software Engineering with programming languages such as HTML, or databases like AWS</p>
+        <a href="#"> <i class='bx bx-link-external'> </i></a>
+      </div>
+
+    </div>
+
+
+    <div class="project-box">
+      <img src="portfolio3.jpg" alt="picture of projects">
+      <div class="portfolio-layer">
+        <h4>Calculator</h4>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a href="#"> <i class='bx bx-link-external'> </i></a>
+      </div>
+
+    </div>
+
+
+
+    <div class="project-box">
+      <img src="portfolio4.jpg" alt="picture of projects">
+      <div class="portfolio-layer">
+        <h4>Tour Application</h4>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a href="#"> <i class='bx bx-link-external'> </i></a>
+      </div>
+
+    </div>
+
+
+
+    <div class="project-box">
+      <img src="portfolio5.jpg" alt="picture of projects">
+      <div class="portfolio-layer">
+        <h4>Shopping Website</h4>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a href="#"> <i class='bx bx-link-external'> </i></a>
+      </div>
+
+    </div>
+
+
+    <div class="project-box">
+      <img src="portfolio6.jpg" alt="picture of projects">
+      <div class="portfolio-layer">
+        <h4>Astonishing Portfolio</h4>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a href="#"> <i class='bx bx-link-external'> </i></a>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+ </section>
+
+
+
+ <section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span></h2>
+  <!--We are going to use form tags. It is just like registering a form in school.  -->
+
+  <form action="mailto:aydinmahid19@gmail.com" method="post">
+    <div class="input-box">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+    </div>
+
+    <div class="input-box">
+      <input type="number" placeholder="Mobile Number" required>
+      <input type="text" placeholder="Email Subject" required>
+    </div>
+
+    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+
+ </section>
+
+
+
+ <!-- Footer Section- We are going to make the footer section using the footer tag. -->
+  <footer class="footer">
+<div class="footer-text">
+  <p>Copyright © 2025 by Aydin |<a href="https://ehobby.in/" class="ehobby"> via EHOBBY Classes</a></p>
+</div>
+
+<div class="footer-icon-top">
+  <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+</div>
+  </footer>
+
+
+
+
+
+
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <script>
+  const aydin=new Typed('.multiple-text',{
+    strings:['gentle person', 'smart kid', 'gamer', 'coder'],
+    typeSpeed: 100, 
+    loop:true, 
+    backSpeed: 100,
+    backDelay: 1000,
+  })
+ </script>
+
+
+
+<!-- we are creating the typed effect for the about section now -->
+
+
+<script>
+  // we create a variable and we use the typed effect and store the values inside this variable
+  var variable=new Typed('.about-text',{
+    strings:['I like to draw', 'I love to read books', 'I like to play football', 'Those are a few things that I do'],
+    typeSpeed: 100,
+    loop:true,
+    backSpeed: 100,
+    backDelay: 1000,
+  })
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+<!-- H1, h2, h3 up to h6 are HEADINGS not headers. -->
